@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waad Abdullah | My CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="profile-header">
+        <h1>Waad Abdullah</h1>
+        <p class="job-title">Information Technology Student</p>
+
+        <nav aria-label="CV sections">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Task 1 and Task 5 buttons -->
+        <div class="page-actions">
+            <button type="button" id="theme-toggle" class="action-button" aria-pressed="false">Dark Mode</button>
+            <button type="button" id="print-button" class="action-button">Print / Save as PDF</button>
+        </div>
+    </header>
+
+    <main class="cv-container">
+        <section id="about" class="cv-section">
+            <h2>About Me</h2>
+            <p>
+                I'm an Information Technology student with a 4.92 GPA.
+                I'm passionate about learning technical skills.
+            </p>
+            <!-- Task 2: initially hidden extra information -->
+            <p id="more-about" hidden>
+                I have experience with programming (Java, Python, OOP),
+                database basics (SQL), networking fundamentals using Packet Tracer,
+                and UI design.
+            </p>
+            <button type="button" id="show-more-button" class="action-button" aria-expanded="false" aria-controls="more-about">
+                Show More
+            </button>
+        </section>
+
+        <section id="education" class="cv-section">
+            <h2>Education</h2>
+            <article class="education-item">
+                <h3>King Abdulaziz University</h3>
+                <p>Bachelor of Information Technology</p>
+                <p>Expected Graduation: 2027</p>
+            </article>
+        </section>
+
+        <section id="skills" class="cv-section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>OOP</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="cv-section">
+            <h2>Projects</h2>
+            <!-- Task 4: category filters -->
+            <div class="project-filters" aria-label="Project category filters">
+                <button type="button" class="filter-button active" data-filter="All" aria-pressed="true">All</button>
+                <button type="button" class="filter-button" data-filter="Web" aria-pressed="false">Web</button>
+                <button type="button" class="filter-button" data-filter="Programming" aria-pressed="false">Programming</button>
+            </div>
+            <!-- Task 3: script.js creates project cards here -->
+            <div id="projects-container" class="projects-container" aria-live="polite"></div>
+            <noscript>Please enable JavaScript to view and filter the projects.</noscript>
+        </section>
+
+        <section id="contact" class="cv-section">
+            <h2>Contact</h2>
+            <p>
+                Email:
+                <a href="mailto:waad25llll@gmai.com">waad25llll@gmai.com</a>
+            </p>
+            <p>
+                GitHub:
+                <a href="https://github.com/waad25l" target="_blank" rel="noopener noreferrer">github.com/waad25l</a>
+            </p>
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/waad-abdullah-235891330/" target="_blank" rel="noopener noreferrer">Waad Abdullah</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Waad Abdullah</p>
+    </footer>
+</body>
+</html>
